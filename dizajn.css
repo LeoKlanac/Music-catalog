@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size:xx-large;
+}
+body {
+	background-color: #354259;
+	color: #C2DED1;
+	font-size: 15px;
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+    background-image: linear-gradient(rgba(53,66,89,0.3),rgba(53,66,89,0.5)), url("slike/pozadina.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 2;
+}
+
+nav {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+.navigacija{
+	flex: 1;
+	text-align: right;
+}
+.navigacija ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.navigacija ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+.navigacija ul li::after {
+	content:"";
+	width: 0%;
+	height: 2px;
+	background: #C2DED1;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.navigacija ul li:hover::after {
+	width: 100%;
+}
+
+footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+    clear: both;
+}
+
+
+.sadrzaj h1{
+    padding: 40px 0;
+    font-size: larger;
+}
+.sadrzaj{
+    width:60%;
+    float: left;
+    padding: 40px 0;
+}
+
+.tablica_autora {
+	width: 60%;
+	float: left;
+    padding: 50px 0;
+	
+} 
+.tablica_autora h1{
+    padding: 40px 0;
+    font-size: larger;
+}
+
+.sub-header{
+    min-height: 35vh;
+	width: 100%;
+    background-image: linear-gradient(rgba(53,66,89,0.3),rgba(53,66,89,0.5)), url("slike/pozadina.jpg");
+	background-size: cover;
+	background-position-y: center;
+	position: relative;
+    
+
+}
+
+#submit{
+    background-color: #ECE5C7;
+    border: solid;
+    color: #354259;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+#submit:hover{
+    background-color: #04AA6D;
+    transition:0.5s;
+   
+}
+#reset{
+    background-color: #ECE5C7;
+    border: solid;
+    color: #354259;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+#reset:hover{
+    background-color: #f44336;
+    transition:0.5s;
+   
+}
+
+.tablica_korisnici_sustava table {
+	margin: 0 auto;
+}
+
+#listakorisnika {
+	text-align: center;
+}
+
+.listaKorisnika a:link, .listaKorisnika a:visited, .listaKorisnika a:active {
+	color: #48acdb;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.listaKorisnika a:hover {
+	text-decoration: underline;
+}
+
+#listapjesama tr td, #listapjesama tr th {
+	font-size: 18px;
+}
+
+#listapjesama {
+	border-collapse: collapse;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, .5);
+}
+
+#listapjesama td, #listapjesama th {
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
